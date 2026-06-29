@@ -14,8 +14,11 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/viec-lam', [JobController::class, 'index'])->name('jobs.index');
 Route::get('/job/{slug}', [JobController::class, 'show'])->name('jobs.show');
 
+Route::get('/{slug}', [PageController::class, 'show'])
+    ->name('page.show');
+
 Route::get('/ve-chuong-toi', [PageController::class, 'about'])->name('about');
-Route::get('/chinh-sach-quyen-rieng-tu', [PageController::class, 'privacy'])->name('privacy');
+# Route::get('/chinh-sach-quyen-rieng-tu', [PageController::class, 'privacy'])->name('privacy');
 
 Route::get('/lien-he', [ContactController::class, 'index'])->name('contact');
 Route::post('/lien-he', [ContactController::class, 'store'])->name('contact.store');
