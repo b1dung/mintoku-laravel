@@ -1,0 +1,38 @@
+#footer {
+    border-top: 3px solid var(--primary-color);
+}
+
+#footer .footerContent {
+    padding-block: 36px;
+}
+
+#footer .copyright {
+    background-color: var(--primary-color);
+    padding-block: 8px;
+}
+
+#footer .copyright .text {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
+
+#footer .navFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#footer .navFooter .navMenu {
+    list-style: none;
+}
+
+#footer .navFooter .navMenu a {
+    color: var(--primary-text);
+    opacity: 1;
+}
+
+#footer .navFooter .navMenu a:hover {
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}

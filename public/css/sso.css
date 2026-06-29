@@ -1,0 +1,72 @@
+<style>.cv-modal-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px); /* Làm mờ nền phía sau */
+}
+
+.cv-modal-content {
+    position: relative;
+    width: 95%;
+    max-width: 500px; /* Độ rộng tối đa của Popup */
+    height: 85vh; /* Chiều cao chiếm 85% màn hình */
+    background: #fff;
+    border-radius: 30px; /* Bo góc cực đại theo style hiện đại */
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUp 0.3s ease-out;
+}
+.cv-modal-content.profile {
+    max-width: 1200px;
+}
+#cv-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.cv-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+    background: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.cv-modal-close:hover {
+    background: #f3f4f6;
+    color: #000;
+    transform: rotate(90deg);
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+																 #group-logged-in {
+    gap: 15px;
+}
+
+#group-logged-in .logout {
+    background: #0172AF;
+}
+																 </style>

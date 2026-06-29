@@ -1,0 +1,31 @@
+@function cal($size, $percent: 1.2) {
+  @return $size * $percent;
+}
+@function vw($px-vw, $base-vw: 430px) {
+  @return ($px-vw * 100vw) / $base-vw;
+}
+.banner_page {
+  img {
+    display: block;
+  }
+}
+.page_product {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.page_product .box .column {
+  max-width: calc(100% / 2 - 12px);
+  flex: none;
+}
+
+.page_product .box {
+  flex-wrap: wrap;
+  overflow-x: initial;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  .page_product .box .column {
+    max-width: calc(100% / 4 - 18px);
+    flex: none;
+  }
+}

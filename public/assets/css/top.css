@@ -1,0 +1,202 @@
+#top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+/* title */
+#top .h2Title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* banner */
+#top .scBanner .bannerContent {
+    position: relative;
+}
+
+#top .scBanner .bannerContent img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#top .scBanner .bannerContent .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    width: 90%;
+    display: block;
+    font-size: 16px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* vjc */
+#top .scVjc a:hover {
+    opacity: 0.8;
+}
+
+/* search tag */
+#top .scSearchTag {
+    background-color: #fff7f9;
+    padding-block: 40px;
+}
+
+#top .scSearchTag .tagList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#top .scSearchTag .tagList a {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    padding: 3px 7px;
+    display: block;
+    color: var(--primary-text);
+    transition: all 0.2s ease-in-out;
+    font-size: 13px;
+}
+
+#top .scSearchTag .tagList a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* about */
+#top .scAbout .aboutContent .box {
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ddd;
+    row-gap: 20px;
+}
+
+#top .scAbout .aboutContent .aboutYt,
+#top .scAbout .aboutContent .aboutData {
+    flex: 1;
+}
+
+#top .scAbout .aboutContent .aboutYt iframe {
+    min-height: 200px;
+    border-radius: 5px;
+    font-size: 0;
+}
+
+#top .scAbout .aboutContent .aboutData .btn {
+    margin-top: 30px;
+}
+
+/* benefit */
+#top .scBenefit .benefitList {
+    display: grid;
+    row-gap: 28px;
+}
+
+#top .scBenefit .benefitList .box {
+    border-radius: 5px;
+    background-color: #fff;
+    display: grid;
+    padding: 20px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    row-gap: 20px;
+    align-content: space-between;
+    border: 1px solid #ddd;
+}
+
+#top .scBenefit .boxHead {
+    margin-bottom: 20px;
+}
+
+#top .scBenefit .boxHead .title {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    line-height: 1.6;
+}
+
+#top .scBenefit .boxHead .title .img {
+    flex-shrink: 0;
+    width: 80px;
+}
+
+#top .scBenefit .boxHead .title .img img {
+    height: 50px;
+    width: auto;
+}
+
+/* useful */
+#top .scUseful {
+    background-color: #f9f9f9;
+    padding-block: 40px;
+}
+
+
+@media screen and (min-width: 768px) {
+    #top {
+        row-gap: 4.5rem;
+    }
+
+    /* title */
+    #top .h2Title {
+        font-size: 24px;
+    }
+
+    /* banner */
+    #top .scBanner .bannerContent .text {
+        max-width: 700px;
+        font-size: 22px;
+    }
+
+    /* search tag */
+    #top .scSearchTag {
+        padding-block: 50px;
+    }
+
+    /* about */
+    #top .scAbout .aboutContent .box {
+        flex-direction: row;
+        padding: 36px;
+        column-gap: 40px;
+        align-items: center;
+    }
+
+    #top .scAbout .aboutContent .aboutYt iframe {
+        min-height: 300px;
+    }
+
+    #top .scAbout .aboutContent .aboutData .text {
+        font-size: 14px;
+    }
+
+    /* benefit */
+    #top .scBenefit .benefitList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
+    }
+
+    #top .scBenefit .benefitList .box {
+        padding: 36px;
+    }
+
+    #top .scBenefit .boxHead .title {
+        font-size: 18px;
+    }
+
+    /* useful */
+    #top .scUseful {
+        padding-block: 50px;
+    }
+}

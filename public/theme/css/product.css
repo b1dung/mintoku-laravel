@@ -1,0 +1,26 @@
+.banner_page img {
+  display: block;
+}
+
+.page_product {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.page_product .box .column {
+  max-width: calc(50% - 12px);
+  flex: none;
+}
+
+.page_product .box {
+  flex-wrap: wrap;
+  overflow-x: initial;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .page_product .box .column {
+    max-width: calc(25% - 18px);
+    flex: none;
+  }
+}/*# sourceMappingURL=product.css.map */

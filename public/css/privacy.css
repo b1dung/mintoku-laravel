@@ -1,0 +1,95 @@
+/* banner */
+#privacy .sc-banner {
+	position: relative;
+	color: #fff;
+	padding-block: 15px 30px;
+}
+
+#privacy .sc-banner .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#privacy .sc-banner .bg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+#privacy .sc-banner .banner-container {
+	position: relative;
+}
+
+#privacy .sc-banner .tag-block {
+	font-weight: 300;
+	margin-bottom: 6.5px;
+}
+
+#privacy .sc-banner .title {
+	font-family: "DM Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+	max-width: 85%;
+	min-height: 81px;
+}
+
+#privacy .sc-content{
+	padding-block: 25px;
+	font-size: 15px;
+	line-height: 26px;
+	letter-spacing: 0.3px;
+}
+
+#privacy .sc-content .group+.group {
+	margin-top: 20px;
+}
+
+#privacy .sc-content .ttl {
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+#privacy .sc-content .text,
+#privacy .sc-content .text .indent {
+	padding-left: 22px;
+}
+
+#privacy .sc-content .text+.text {
+	margin-top: 15px;
+}
+
+#privacy .sc-content p:has(.num),
+#privacy .sc-content .ttl:has(.num){
+	display: flex;
+	gap: 7px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	/* banner */
+	#privacy .sc-banner {
+		padding-block: 46px 55px;
+	}
+
+	#privacy .sc-banner .tag-block {
+		margin-bottom: 18px;
+	}
+
+	#privacy .sc-banner .title {
+		font-size: 20px;
+		line-height: 27px;
+		max-width: 100%;
+	}
+
+	#privacy .sc-content{
+		padding-block: 46px;
+		font-size: 16px;
+		line-height: 27px;
+	}
+}

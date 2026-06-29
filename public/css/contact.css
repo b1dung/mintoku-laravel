@@ -1,0 +1,629 @@
+#contact .hidden {
+	display: none !important;
+}
+
+/* banner */
+#contact .sc-banner {
+	position: relative;
+	color: #fff;
+	padding-block: 15px 30px;
+}
+
+#contact .sc-banner .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#contact .sc-banner .bg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+#contact .sc-banner .banner-container {
+	position: relative;
+}
+
+#contact .sc-banner .tag-block {
+	font-weight: 300;
+	margin-bottom: 6.5px;
+}
+
+#contact .sc-banner .title {
+	font-family: "DM Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+	max-width: 85%;
+}
+
+
+/* form */
+#contact .sc-form {
+	padding-block: 34px 30px;
+}
+
+#contact .sc-form .form-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 22.5px;
+	margin-inline: auto;
+	max-width: 314px;
+	position: relative;
+}
+
+
+#contact .sc-form .form-head:before {
+	content: '';
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	border-top: 2px solid #D9D9D9;
+}
+
+#contact .sc-form .form-head .step {
+	display: block;
+	color: #fff;
+	width: 100%;
+	border-radius: 5px;
+	background-color: #D9D9D9;
+	padding: 3px 10px 4px;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	position: relative;
+}
+
+#contact .form-head .step1.active {
+	background-color: #F9871C;
+}
+
+#contact .form-head .step2.active {
+	background-color: #F9871C;
+}
+
+#contact .form-head .step3.active {
+	background-color: #F9871C;
+}
+
+#contact .sc-form .job .job-container {
+	max-width: 838px;
+	margin-inline: auto;
+	padding-block: 50px 20px;
+}
+
+#contact .sc-form .form-head+.form-main {
+	padding-top: 20px;
+}
+
+#contact .sc-form .form-main {
+	padding-bottom: 20px;
+	max-width: 838px;
+	margin-inline: auto;
+}
+
+#contact .sc-form .form-main:has(.contact-form-02) {
+	max-width: 100%;
+}
+
+#contact .sc-form .form-main .text {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 28px;
+	color: #000;
+	/* 	letter-spacing: 1.5px; */
+	letter-spacing: 0.5px;
+	margin-bottom: 34px;
+	margin-top: 22px;
+}
+
+#contact .sc-form .form-main #thank-you .text {
+	font-size: 14px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	margin-top: 2px;
+}
+
+#contact .sc-form .form-head+.form-main .wpcf7 {
+	border-top: 1px solid #D9D9D9;
+}
+
+#contact .sc-form .form-main .line {
+	padding-block: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 13px;
+}
+
+#contact .sc-form .form-main #form-confirm .line {
+	padding-block: 28px;
+	align-items: baseline;
+}
+
+#contact .sc-form .form-main .line+.line {
+	border-top: 1px solid #D9D9D9;
+}
+
+#contact .sc-form .form-main .line label {
+	font-size: 15px;
+	font-weight: 700;
+	/* 	letter-spacing: 1.5px; */
+	letter-spacing: 0.5px;
+}
+
+#contact .sc-form .form-main .line label .require {
+	font-size: 10px;
+	color: #F9871C;
+	border: 1px solid #F9871C;
+	border-radius: 99px;
+	padding: 4px 9px;
+	display: inline-block;
+	margin-left: 7px;
+	font-weight: 400;
+	line-height: 1.1;
+	letter-spacing: 0.5px;
+	position: relative;
+	top: -2px;
+}
+
+/* #contact .sc-form #form-import .line:has(input[type="radio"]){
+grid-template-columns: 105px 1fr;
+} */
+
+#contact .sc-form #form-confirm .line-row {
+	grid-template-columns: 134px 1fr;
+}
+
+#contact .sc-form #form-import .line .group {
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+
+#contact .sc-form input:not([type='checkbox'], [type='radio'], [type='submit'], [type='button']),
+#contact .sc-form textarea,
+#contact .sc-form select {
+	border: 1px solid #939191;
+	border-radius: 5px;
+	color: #656565;
+	font-size: 15px;
+	width: 100%;
+	max-width: 100%;
+	height: 45px;
+	padding: 6px 19px;
+	line-height: 26px;
+	/* 	letter-spacing: 1.5px; */
+	letter-spacing: 0.5px;
+}
+
+#contact .sc-form textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+#contact .sc-form input[type="radio"],
+#contact .sc-form input[type="checkbox"] {
+	display: none;
+}
+
+#contact .sc-form input::placeholder,
+#contact .sc-form textarea::placeholder {
+	color: #939191;
+}
+
+#contact .sc-form input:focus,
+#contact .sc-form textarea:focus {
+	outline: none;
+}
+
+#contact .sc-form .wpcf7-radio .wpcf7-list-item,
+#contact .sc-form .wpcf7-checkbox .wpcf7-list-item {
+	margin: 0;
+}
+
+#contact .sc-form .wpcf7-radio,
+#contact .sc-form .wpcf7-checkbox {
+	display: flex;
+	gap: 20px 45px;
+	flex-wrap: wrap;
+}
+
+#contact .sc-form .wpcf7-radio label,
+#contact .sc-form .wpcf7-checkbox label {
+	display: flex;
+	gap: 9px;
+	position: relative;
+	padding-left: 36px;
+	cursor: pointer;
+}
+
+#contact .sc-form .wpcf7-radio label:before,
+#contact .sc-form .wpcf7-checkbox label:before {
+	content: '';
+	border: 2px solid #D9D9D9;
+	border-radius: 99px;
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 52%;
+	transform: translatey(-50%);
+	left: 0;
+}
+
+#contact .sc-form .wpcf7-radio label:has(input:checked):after,
+#contact .sc-form .wpcf7-checkbox label:has(input:checked):after {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 13px;
+	/* 	background-color: #F9871C; */
+	background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%226.5%22%20cy%3D%226.5%22%20r%3D%226.5%22%20fill%3D%22%23F9871C%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 99px;
+	position: absolute;
+	left: 7.2px;
+	top: 52%;
+	transform: translatey(-50%);
+
+}
+
+#contact .sc-form .wpcf7-radio label:has(input:checked):before,
+#contact .sc-form .wpcf7-checkbox label:has(input:checked):before {
+	border-color: #656565;
+}
+
+#contact .sc-form .wpcf7-not-valid-tip {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+#contact .sc-form .form-main .line .privacy {
+	border: 1px solid #939191;
+	border-radius: 5px;
+	color: #939191;
+	font-size: 15px;
+	padding: 16px 16px 16px 19px;
+	line-height: 26px;
+	/* 	letter-spacing: 1.5px; */
+	letter-spacing: 0.5px;
+	display: grid;
+	row-gap: 32px;
+}
+
+#contact .sc-form .form-main .line .privacy .bold {
+	font-weight: 700;
+}
+
+#contact .sc-form .form-main .line .privacy .medium {
+	font-weight: 500;
+}
+
+#contact .sc-form .form-main .accept {
+	text-align: center;
+	padding-block: 25px 3px;
+}
+
+#contact .sc-form .form-main .accept label {
+	position: relative;
+	display: flex;
+	column-gap: 7px;
+}
+
+#contact .sc-form .form-main .accept label:before {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 13px;
+	border-radius: 2px;
+	border: 1px solid #D9D9D9;
+	background-color: #fff;
+	position: relative;
+	top: 4px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#contact .sc-form .form-main .accept label:has(input:checked):before {
+	border-color: #F9871C;
+	background-color: #F9871C;
+	background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23F9871C%22%20stroke%3D%22%23F9871C%22%20d%3D%22M.5.5h12v12H.5z%22%2F%3E%3Cpath%20d%3D%22m3%207.5%202%202L10.5%204%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+}
+
+#contact .sc-form .form-main .accept .wpcf7-list-item {
+	margin: 0;
+}
+
+#contact .sc-form .form-main .accept a {
+	color: #656565;
+	text-decoration: underline;
+}
+
+#contact .sc-form .form-main .back,
+#contact .sc-form .form-main .submit input[type="button"] {
+	color: #000;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-underline-offset: 2px;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+#contact .sc-form .form-main .back {
+	display: block;
+	width: max-content;
+	margin-inline: auto;
+}
+
+#contact .sc-form .form-main .submit {
+	display: flex;
+	gap: 27px;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #D9D9D9;
+	padding-top: 30px;
+}
+
+#contact .sc-form .form-main .submit button[type="submit"] {
+	background: #F9871C;
+}
+
+#contact .sc-form .form-main .submit button[type="button"] {
+	background: #6b6967;
+}
+
+#contact .sc-form .form-main .submit button[type="submit"],
+#contact .sc-form .form-main .submit button[type="button"] {
+	color: #fff;
+	border-radius: 99px;
+	text-align: center;
+	padding: 19px 35px;
+	border: 0;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.5px;
+	min-width: 240px;
+	cursor: pointer;
+	transition: all 0.2s
+}
+
+#contact .sc-form .form-main .submit button[type="submit"]:disabled {
+	background: #D9D9D9;
+}
+
+#contact .sc-form .contact-form-02 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px 16px;
+	padding-block: 20px;
+}
+
+#contact .sc-form .contact-form-02 .group {
+	display: block;
+	width: fit-content;
+}
+
+#contact .sc-form .contact-form-02 .group:has(table),
+#contact .sc-form .contact-form-02 .group:has(textarea),
+#contact .sc-form .contact-form-02 .submit {
+	width: 100%;
+}
+
+#contact .sc-form .contact-form-02 label {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	margin-bottom: 8px;
+	width: fit-content;
+}
+
+#contact .sc-form .contact-form-02 .group .flex {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#contact .sc-form .contact-form-02 .group .flex .unit {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+#contact .sc-form .contact-form-02 .wpcf7-radio {
+	min-height: 45px;
+	align-items: center;
+	gap: 16px 30px;
+	flex-wrap: wrap;
+}
+
+#contact .sc-form .contact-form-02 .repeat {
+	border-collapse: collapse;
+	border: 1px solid #d9d9d9;
+	width: 100%;
+}
+
+#contact .sc-form .contact-form-02 .repeat td {
+	border: 1px solid #d9d9d9;
+	padding: 8px;
+}
+
+#contact .sc-form .contact-form-02 .repeat th {
+	background-color: #F9871C;
+	color: #fff;
+	text-align: left;
+	padding: 8px 12px;
+	font-weight: 600;
+}
+
+#contact .sc-form .contact-form-02 .repeat button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	border: 0;
+	border-radius: 99px;
+	width: 24px;
+	height: 24px;
+	line-height: 1;
+	padding-bottom: 1px;
+}
+
+#contact .sc-form .contact-form-02 .repeat .btns {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+}
+
+#contact .sc-form .contact-form-02 .repeat button.add-row {
+	background-color: #0172AF;
+}
+
+#contact .sc-form .contact-form-02 .repeat button.remove-row {
+	background-color: #d9d9d9;
+}
+
+#contact .sc-form .preview {
+	max-width: 838px;
+	margin-inline: auto;
+	margin-bottom: 60px;
+	aspect-ratio: 3 / 2;
+}
+
+@media screen and (min-width: 768px) {
+
+	/* banner */
+	#contact .sc-banner {
+		padding-block: 46px 55px;
+	}
+
+	#contact .sc-banner .tag-block {
+		margin-bottom: 18px;
+	}
+
+	#contact .sc-banner .title {
+		font-size: 20px;
+		line-height: 27px;
+		max-width: 100%;
+		min-height: 81px;
+	}
+
+
+	/* form */
+	#contact .sc-form {
+		padding-block: 61px 26px;
+	}
+
+	#contact .sc-form .form-head+.form-main {
+		padding-top: 60px;
+	}
+
+	#contact .sc-form .form-main {
+		padding-bottom: 60px;
+	}
+
+	#contact .sc-form .form-head {
+		gap: 40px;
+		max-width: 558px;
+	}
+
+	#contact .sc-form .form-head .step {
+		padding: 8px 10px;
+		font-size: 16px;
+	}
+
+	#contact .sc-form .form-main .text {
+		margin-top: 0;
+	}
+
+	#contact .sc-form .form-main #thank-you .text {
+		font-size: 15px;
+		line-height: 30px;
+		margin-bottom: 39px;
+		margin-top: 0;
+
+		max-width: 75%;
+		margin-inline: auto;
+	}
+
+	#contact .sc-form .form-main .line,
+	#contact .sc-form #form-import .line:has(input[type="radio"]),
+	#contact .sc-form #form-confirm .line-row {
+		padding-block: 30px;
+		grid-template-columns: 182px 1fr;
+		gap: 18px;
+	}
+
+	#contact .sc-form .wpcf7-radio label:has(input:checked):after {
+		left: 7px;
+	}
+
+	#contact .sc-form .form-main #form-confirm .line {
+		padding-block: 40px;
+	}
+
+	#contact .sc-form .form-main #form-import .line label {
+		padding-top: 10px;
+	}
+
+	#contact .sc-form .wpcf7-radio,
+	#contact .sc-form .wpcf7-check {
+		gap: 20px 52px;
+	}
+
+	#contact .sc-form .form-main #form-import .line:has(.wpcf7-radio) label,
+	#contact .sc-form .form-main #form-import .line:has(.wpcf7-checkbox) label {
+		padding-top: 0;
+	}
+
+	#contact .sc-form .form-main .line label .require {
+		margin-left: 8px;
+	}
+
+	#contact .sc-form .form-main .line .privacy {
+		row-gap: 30px;
+	}
+
+	#contact .sc-form .form-main .accept {
+		text-align: left;
+		padding-block: 17px 7px;
+	}
+
+	#contact .sc-form .form-main .submit {
+		padding-top: 60px;
+	}
+
+	/* 	contact 02 */
+	#contact .sc-form .contact-form-02 {
+		padding-block: 30px;
+	}
+
+	#contact .sc-form .contact-form-02 input,
+	#contact .sc-form .contact-form-02 select {
+		min-width: 200px;
+	}
+
+	#contact .sc-form .contact-form-02 .repeat input,
+	#contact .sc-form .contact-form-02 .repeat select {
+		min-width: auto;
+	}
+}

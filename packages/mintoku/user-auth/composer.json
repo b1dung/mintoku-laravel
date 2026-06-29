@@ -1,0 +1,10 @@
+{
+    "name": "mintoku/user-auth",
+    "description": "User Authentication Module for Mintoku",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mintoku\UserAuth\": "src/"
+        }
+    }
+}
