@@ -43,21 +43,6 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
-		'sub_mysql' => [
-            'driver' => 'mysql',
-            'host' => env('DB_HOST_SUB', '127.0.0.1'),
-            'port' => env('DB_PORT_SUB', '3307'),
-            'database' => env('DB_DATABASE_SUB', 'crm_db'),
-            'username' => env('DB_USERNAME_SUB', 'crm_user'),
-            'password' => env('DB_PASSWORD_SUB', 'secret'),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-        ],
-
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),

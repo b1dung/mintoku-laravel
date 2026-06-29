@@ -7,7 +7,6 @@ use App\Traits\HasCommonFields;
 use App\Traits\HasBreadcrumbSchema;
 use RalphJSmit\Laravel\SEO\Support\HasSEO;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class Job extends Model
@@ -23,41 +22,6 @@ class Job extends Model
         return config('services.mintoku_public.jobs_table', $this->table);
     }
 
-	protected static function booted(): void
-    {
-        static::saved(function (Job $job) {
-            if (!config('services.crm_sync.enabled')) {
-                return;
-            }
-
-            $columns = \Illuminate\Support\Facades\Schema::connection('sub_mysql')
-                ->getColumnListing('job_postings');
-            $columns = array_diff($columns, ['id']);
-
-            $data = [];
-            foreach ($columns as $col) {
-                if ($col === 'created_at') {
-                    $data[$col] = $job->created_at ?? now();
-                } elseif ($col === 'updated_at') {
-                    $data[$col] = now();
-                } elseif ($col === 'extra_attributes') {
-                    $data[$col] = json_encode($job->extra_attributes ?? []);
-                } else {
-                    $data[$col] = $job->{$col} ?? null;
-                }
-            }
-            $data['id'] = $job->id;
-
-            try {
-                \Illuminate\Support\Facades\DB::connection('sub_mysql')
-                    ->table('job_postings')
-                    ->upsert([$data], ['id'], $columns);
-            } catch (\Throwable $e) {
-                \Illuminate\Support\Facades\Log::warning('SyncJobToCrm failed: ' . $e->getMessage());
-            }
-        });
-    }
-	
     protected $fillable = [
         'company_id',
         'title',

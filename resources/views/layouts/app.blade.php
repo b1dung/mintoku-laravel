@@ -63,7 +63,7 @@
                 <div class="footer-links">
                     <ul class="navMenu">
                         <li class="menu-item"><a href="https://vietnam-camcom.com/vi/" title="Công ty" target="_blank"><span class="hover link">Công ty</span></a></li>
-                        <li class="menu-item"><a href="{{route('privacy')}}"><span class="hover link">Chính sách quyền riêng tư</span></a></li>
+                        <li class="menu-item"><a href="{{ url('/chinh-sach-quyen-rieng-tu') }}"><span class="hover link">Chính sách quyền riêng tư</span></a></li>
                         <li class="menu-item"><a href="{{route('contact')}}"><span class="hover link">Liên hệ</span></a></li>
                     </ul>
                 </div>

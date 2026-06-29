@@ -49,23 +49,13 @@ class PageController extends Controller
     {
         $page = Page::where('slug', $slug)->where('active', 1)->firstOrFail();
 
-        $seoData = [
-            'title' => $page->meta_title ?: $page->title,
-            'description' => $page->meta_description ?: Str::limit(strip_tags($page->content), 160),
-            'og_image' => $page->thumbnail ? asset('storage/' . $page->thumbnail) : asset('images/job_01.png'),
-            'canonical' => url()->current()
-        ];
+        $seoData = new SEOData(
+            title: $page->title,
+            description: Str::limit(strip_tags($page->content), 160),
+            image: asset('images/job_01.png'),
+            url: url()->current(),
+        );
 
         return view('pages.show', compact('page', 'seoData'));
-    }
-    public function privacy()
-    {
-        $seoData = new SEOData(
-            title: 'Chính sách bảo mật | Mintoku Work Vietnam',
-            description: 'mintoku work vietnam - Trang web tìm kiếm việc làm miễn phí tại Việt Nam.',
-            image: asset('images/contact_banner_pc.jpg'),
-            url: route('privacy'),
-        );
-        return view('pages.privacy', compact('seoData'));
     }
 }

@@ -10,9 +10,7 @@ class Page extends Model
         'title',
         'slug',
         'content',
-        'status',
-        'sort_order',
-        'seo_title',
-        'seo_description',
+        'active',
+        'ord',
     ];
 }

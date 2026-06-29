@@ -38,10 +38,6 @@ return [
         'ref'          => env('PANCAKE_CRM_REF', 'mintoku.vn'),
     ],
 
-    'crm_sync' => [
-        'enabled' => env('CRM_SYNC_ENABLED', true),
-    ],
-
     'mintoku_public' => [
         'jobs_table' => env('MINTOKU_JOBS_TABLE', 'jobs'),
     ],
